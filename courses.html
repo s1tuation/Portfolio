@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
+    <link rel="icon" href="./Img used/My Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Lesedi Rwicila</title>
+</head>
+<body>
+ <section>
+    <video autoplay loop class="back-video" muted plays-inline>
+        <source src="./pexels-anna-nekrashevich-6799747.mp4" type="video/mp4">
+    </video>
+
+    <img class="imgX" src="./Img used/My Logo.png" alt="place holder logo">
+
+    <header id="Top">
+                <nav>
+            <ul>
+                <li><a class="active" href="#Tools">Tools</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="./index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+ </section>
+
+ <section id="languages">
+    <div class="container reveal">
+        <h2  style="font: size 80px; color: #099b9b;" >Languages I know</h2>
+        <div class="cards">
+            <div class="text-card">
+                <h3>HTML5</h3>
+              
+                <img src="./Img used/HTML.png" alt="">
+            </div>
+
+            <div class="cards">
+                <div class="text-card">
+                    <h3>CSS3</h3>
+                    
+                    <img src="./Img used/CSS.png" alt="">
+                </div>
+
+                <div class="cards">
+                    <div class="text-card">
+                        <h3>Java</h3>
+                       
+                        <img src="./Img used/java.png"  alt="">
+                    </div>
+
+                    <div class="cards">
+                        <div class="text-card">
+                            <h3>Python</h3>
+                           
+                            <img src="./Img used/python.png"  alt="">
+                        </div>
+                </div>
+</section>
+<section>
+    <div class="container reveal">
+        <h2  style="font: size 80px; color: #099b9b;" >A few more</h2>
+        <div class="cards">
+            <div class="text-card">
+                <h3>PHP</h3>
+              
+                <img src="./Img used/PHP.png" alt="">
+            </div>
+
+            <div class="cards">
+                <div class="text-card">
+                    <h3>SQL</h3>
+                    
+                    <img src="./Img used/sql.png" alt="">
+                </div>
+
+                <div class="cards">
+                    <div class="text-card">
+                        <h3>C#</h3>
+                       
+                        <img style="width:350px ;" src="./Img used/1200px-C_Sharp_wordmark.svg.png"  alt="">
+                    </div>
+
+                    <div class="cards">
+                        <div class="text-card">
+                            <h3>JavaScript</h3>
+                           
+                            <img src="./Img used/JS.png"  alt="">
+                        </div>
+                </div>
+</section>
+<section id="Tools">
+    <div class="container reveal">
+        <h2  style="font: size 80px; color: #099b9b;" >Tools I can use</h2>
+        <div class="cards">
+            <div class="text-card">
+                <h3>Photoshop</h3>
+              
+                <img style="width: 350px;" src="./Img used/photoshop.png" alt="">
+            </div>
+
+            <div class="cards">
+                <div class="text-card">
+                    <h3>Dreamweaver</h3>
+                    
+                    <img style="width: 350px;" src="./Img used/Adobe_Dreamweaver_CC_icon.svg.png" alt="">
+                </div>
+
+                <div class="cards">
+                    <div class="text-card">
+                        <h3>Unity</h3>
+                       
+                        <img style="width: 350px;" src="./Img used/unity.png"  alt="">
+                    </div>
+
+                    <div class="cards">
+                        <div class="text-card">
+                            <h3>Angular js</h3>
+                           
+                            <img style="width: 350px;" src="./Img used/ANJS.png"  alt="">
+                        </div>
+                </div>
+</section>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+ <section style="height: 300px; background:rgb(4, 52, 65); min-height:200px; color: whitesmoke;">
+    <h3 style="position: relative; top: -80px; left: 450px;" >I would love to work with you to create amazing technology that will push humanity forward.</h3>
+    <br>
+    <p style="position: relative; top: 130px; left: -200px;" >Designed and Developed by @Lesedi_Rwicila</p>
+    <br>
+    <a style=" position: relative; left:-1200px;" > Cell: +27 81 574 0880</a>
+    <a style=" position: relative; left:100px;" >Email: lesedirwicila02@gmail.com</a>
+    <a href="https://www.instagram.com/les3dirwicila/" class="fa fa-instagram"></a>
+    <a href="https://www.linkedin.com/in/lesedi-rwicila-06a118232/" class="fa fa-linkedin"></a>
+</section>
+<script type="text/javascript">
+window.addEventListener('scroll', reveal);
+function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for (var i = 0; i < reveals.length; i++) {
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add('active');
+        }
+        else {
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+</script>
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
